@@ -1,0 +1,13 @@
+// Define the budget and ticket cost
+const budget = 40;
+const ticketCost = 9.50;
+
+// Calculate the number of full tickets that can be bought
+const fullTickets = Math.floor(budget / ticketCost);
+
+// Calculate the remaining money
+const remainingMoney = budget % ticketCost;
+
+// Output the results
+console.log(`You can buy ${fullTickets} full tickets.`);
+console.log(`You will have $${remainingMoney.toFixed(2)} left over.`);

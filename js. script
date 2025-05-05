@@ -1,0 +1,46 @@
+// Prompt for the number of guests and sandwiches per guest
+const guests = parseInt(prompt("Enter the number of guests:"), 10);
+const sandwichesPerGuest = parseInt(prompt("Enter the number of sandwiches per guest:"), 10);
+
+if (isNaN(guests) || isNaN(sandwichesPerGuest) || guests < 0 || sandwichesPerGuest < 0) {
+    console.error("Please enter valid positive numbers for guests and sandwiches per guest.");
+} else {
+    const totalSandwiches = guests * sandwichesPerGuest;
+    console.log(`You need a total of ${totalSandwiches} sandwiches.`);
+}
+
+// Define the budget and ticket cost
+const budget = 40;
+const ticketCost = 9.50;
+
+// Calculate the number of full tickets that can be bought
+const fullTickets = Math.floor(budget / ticketCost);
+
+// Calculate the remaining money
+const remainingMoney = budget % ticketCost;
+
+// Output the results
+console.log(`You can buy ${fullTickets} full tickets.`);
+console.log(`You will have $${remainingMoney.toFixed(2)} leftover.`);
+
+// Function to convert dog years to human years
+function convertDogToHumanYears(dogAge) {
+    const humanYears = dogAge * 7;
+    return humanYears;
+}
+
+// Example usage
+const dogAge = 5; // Replace with the dog's age
+const humanYears = convertDogToHumanYears(dogAge);
+console.log(`A dog that is ${dogAge} years old is approximately ${humanYears} in human years.`);
+
+// Declare and initialize the variables
+let userName = prompt("What's your name?").trim(); // Trim to remove extra spaces
+if (userName) {
+    console.log(`Hello, ${userName}!`);
+} else {
+    console.log("Hello, Guest!");
+}
+
+let favoriteFood = "Pizza";
+console.log(`Hello! My name is ${userName || "Guest"}. I love ${favoriteFood}.`);

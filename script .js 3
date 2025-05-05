@@ -1,0 +1,9 @@
+function convertDogToHumanYears(dogAge) {
+    const humanYears = dogAge * 7;
+    return humanYears;
+}
+
+// Example usage:
+const dogAge = 5; // Replace with the dog's age
+const humanYears = convertDogToHumanYears(dogAge);
+console.log(`A dog that is ${dogAge} years old is approximately ${humanYears} in human years.`);

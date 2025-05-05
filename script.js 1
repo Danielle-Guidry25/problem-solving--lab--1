@@ -1,0 +1,9 @@
+const guests = parseInt(prompt("Enter the number of guests:"), 10);
+const sandwichesPerGuest = parseInt(prompt("Enter the number of sandwiches per guest:"), 10);
+
+if (isNaN(guests) || isNaN(sandwichesPerGuest) || guests < 0 || sandwichesPerGuest < 0) {
+    console.error("Please enter valid positive numbers for guests and sandwiches per guest.");
+} else {
+    const totalSandwiches = guests * sandwichesPerGuest;
+    console.log(`You need a total of ${totalSandwiches} sandwiches.`);
+}

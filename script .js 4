@@ -1,0 +1,8 @@
+// Declare and initialize the variables
+let name = prompt("What's your name?"); // Fixed typo in 'prompt'
+console.log("Hello, " + name + "!"); // Dynamically use the entered name
+let favoriteFood = "Pizza";
+let hobby = "Dancing";
+
+// Combine the variables into a greeting string and print
+console.log(`Hello! My name is ${name}. I love ${favoriteFood} and enjoy ${hobby}.`);
